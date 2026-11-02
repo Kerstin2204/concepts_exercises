@@ -148,6 +148,18 @@ function fizzBuzz(n) {
 //   isPalindrome("level") -> true
 // ---------------------------------------------------------------------
 function isPalindrome(word) {
+    let i = 0;
+    let y = word.length-1;
+    while(i < word.length) {
+        let front = word[i];
+        let back = word[y];
+        if(front != back) {
+            return false;
+        }
+        i++;
+        y--;
+    }
+    return true;
 }
 
 
