@@ -26,6 +26,14 @@
 //   sumOfEvens([1, 2, 3, 4]) -> 6
 // ---------------------------------------------------------------------
 function sumOfEvens(numbers) {
+    let sum = 0;
+    for (let i=0; i < numbers.length;i++) {
+        let number = numbers[i]
+        if(number%2 === 0) {
+            sum = sum + number;
+        }  
+    }
+    return sum;
 }
 
 
